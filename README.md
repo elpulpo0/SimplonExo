@@ -8,10 +8,10 @@
 >section
 avec plusieurs lignes
 
-```python :
+` ` `python :
 print("Hello, world")
-``` 
-
+` ` `
+ 
 * puce 1
 * puce 2
 
