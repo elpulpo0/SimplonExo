@@ -14,8 +14,10 @@ Une fois que l'utilisateur trouve le nombre secret, affichez un message de féli
 secretCode = "666"
 
 def fct(code):
-    if code != secretCode:
-        phraseUser = fct(input("Try again:"))
+    if code < secretCode:
+        phraseUser = fct(input("Try again, it's bigger than that:"))
+    elif code > secretCode:
+        phraseUser = fct(input("Try again, it's smaller than that:"))
     else:
         print("""
 Congrats, you found the code !!
